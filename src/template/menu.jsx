@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 export default props => (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -10,8 +11,8 @@ export default props => (
         </button>
         <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div className="navbar-nav">
-                <a className="nav-item nav-link active" href="/todos">Tarefas</a>
-                <a className="nav-item nav-link" href="/about">Sobre</a>
+                <Link  className="nav-item nav-link active" to="/todos">Tarefas</Link>
+                <Link  className="nav-item nav-link" to="/about">About</Link>
             </div>
         </div>
     </nav>
